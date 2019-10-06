@@ -1,5 +1,5 @@
 #include "SysDialog.h"
-#if _MSC_VER
+#if _WIN64
 #include <Windows.h>
 #elif __linux__
 #include <X11/Xlib.h>
