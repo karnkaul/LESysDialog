@@ -7,5 +7,9 @@
 Features:
 - MessageBox / X11 implementations as a system dialogue box
 - Supports three responses (as MessageBox buttons / X11 keypresses)
+
 Usage:
 - Prepare `DialogueData` and call `CreateSystemDialogue(std::move(data))`
+
+Compile Units:
+- SysDialog.cpp
