@@ -11,5 +11,8 @@ Features:
 Usage:
 - Prepare `DialogueData` and call `CreateSystemDialogue(std::move(data))`
 
+CMake:
+  - Set `SOURCES` to existing source file list and include `SysDialog.cmake` before creating the target
+
 Compile Units:
 - SysDialog.cpp
