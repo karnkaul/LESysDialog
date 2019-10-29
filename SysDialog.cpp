@@ -72,11 +72,11 @@ void LaunchMessageBox()
 				std::string resp0 = "1: " + dialogueData.resp0.text;
 				std::string resp1 = "2: " + dialogueData.resp1.text;
 				std::string resp2 = "3: " + dialogueData.resp2.text;
-				XDrawString(pD, w, DefaultGC(pD, s), 10, 50, dialogueData.content.data(), dialogueData.content.length());
-				XDrawString(pD, w, DefaultGC(pD, s), 15, 70, dialogueData.footer.data(), dialogueData.footer.length());
-				XDrawString(pD, w, DefaultGC(pD, s), 10, 150, resp0.data(), resp0.length());
-				XDrawString(pD, w, DefaultGC(pD, s), 10, 170, resp1.data(), resp1.length());
-				XDrawString(pD, w, DefaultGC(pD, s), 10, 190, resp2.data(), resp2.length());
+				XDrawString(pD, w, DefaultGC(pD, s), 10, 50, dialogueData.content.data(), static_cast<int>(dialogueData.content.length()));
+				XDrawString(pD, w, DefaultGC(pD, s), 15, 70, dialogueData.footer.data(), static_cast<int>(dialogueData.footer.length()));
+				XDrawString(pD, w, DefaultGC(pD, s), 10, 150, resp0.data(), static_cast<int>(resp0.length()));
+				XDrawString(pD, w, DefaultGC(pD, s), 10, 170, resp1.data(), static_cast<int>(resp1.length()));
+				XDrawString(pD, w, DefaultGC(pD, s), 10, 190, resp2.data(), static_cast<int>(resp2.length()));
 			}
 			if (e.type == KeyPress || e.type == DestroyNotify)
 			{
